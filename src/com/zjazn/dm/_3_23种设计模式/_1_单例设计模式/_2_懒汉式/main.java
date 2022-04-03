@@ -23,6 +23,11 @@ public class main {
         System.out.println(instance61==instance62);
         System.out.println(instance61.hashCode()+"=="+instance62.hashCode());
 
+        Singleton_Type7 instance71 = Singleton_Type7.INSTANCE;
+        Singleton_Type7 instance72 = Singleton_Type7.INSTANCE;
+        System.out.println(instance71==instance72);
+        System.out.println(instance71.hashCode()+"=="+instance72.hashCode());
+
     }
 }
 //存在线程安全问题
@@ -94,5 +99,10 @@ class Singleton_Type6 {
     public static Singleton_Type6 getInstance(){
         return SingletonInstance.INSTANCE;
     }
+}
+
+//使用“枚举”要实现,同样可以解决线程安全，且不存在效率问题，推荐使用
+enum Singleton_Type7 {
+    INSTANCE;
 }
 

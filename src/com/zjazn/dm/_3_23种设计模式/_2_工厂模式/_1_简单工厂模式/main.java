@@ -5,11 +5,10 @@ package com.zjazn.dm._3_23种设计模式._2_工厂模式._1_简单工厂模式;
  */
 public class main {
     public static void main(String[] args) {
-        FruitFactory factory = new FruitFactory();
-        Fruit pear = factory.createFruit("pear");
+        Fruit pear = FruitFactory.createFruit("pear");
         pear.getName();
 
-        Fruit apple = factory.createFruit("apple");
+        Fruit apple = FruitFactory.createFruit("apple");
         apple.getName();
 
     }

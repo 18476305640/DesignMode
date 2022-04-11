@@ -1,4 +1,4 @@
-package com.zjazn.dm._3_23种设计模式._7_装饰者模式._2_辅助品;
+package com.zjazn.dm._3_23种设计模式._7_装饰者模式._2_修饰者;
 
 import com.zjazn.dm._3_23种设计模式._7_装饰者模式.Decorator;
 import com.zjazn.dm._3_23种设计模式._7_装饰者模式.Drink;

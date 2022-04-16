@@ -1,9 +1,9 @@
 package com.zjazn.dm._3_23种设计模式._7_装饰者模式;
 
-import com.zjazn.dm._3_23种设计模式._7_装饰者模式._2_修饰者.Chocolate;
-import com.zjazn.dm._3_23种设计模式._7_装饰者模式._2_修饰者.Milk;
-import com.zjazn.dm._3_23种设计模式._7_装饰者模式._1_被修饰者.Decaf;
-import com.zjazn.dm._3_23种设计模式._7_装饰者模式._1_被修饰者.ShortBlack;
+import com.zjazn.dm._3_23种设计模式._7_装饰者模式._修饰者.Chocolate;
+import com.zjazn.dm._3_23种设计模式._7_装饰者模式._修饰者.Milk;
+import com.zjazn.dm._3_23种设计模式._7_装饰者模式._被修饰者.Decaf;
+import com.zjazn.dm._3_23种设计模式._7_装饰者模式._被修饰者.ShortBlack;
 
 public class main {
     public static void main(String[] args) {

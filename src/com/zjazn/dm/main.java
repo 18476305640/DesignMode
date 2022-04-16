@@ -3,6 +3,8 @@ package com.zjazn.dm;
 
 import java.io.DataInputStream;
 import java.io.FileInputStream;
+import java.util.HashMap;
+import java.util.Map;
 
 public class main {
 
@@ -20,6 +22,9 @@ public class main {
         DataInputStream dis = new DataInputStream(new FileInputStream("d:\\abc.txt"));
         System.out.println(dis.read());
         dis.close();
+
+
+        Map<String, String> map = new HashMap<String, String>();
     }
 
 

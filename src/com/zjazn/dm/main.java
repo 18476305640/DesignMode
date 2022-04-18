@@ -1,4 +1,5 @@
 package com.zjazn.dm;
+import java.lang.String;
 
 
 import java.io.DataInputStream;
@@ -19,12 +20,21 @@ public class main {
         //5. FilterInputStream 类 有	protected volatile InputStream in; 即含被装饰者
         //6. 分析得出在 jdk 的 io 体系中，就是使用装饰者模式
 
-        DataInputStream dis = new DataInputStream(new FileInputStream("d:\\abc.txt"));
-        System.out.println(dis.read());
-        dis.close();
+//        DataInputStream dis = new DataInputStream(new FileInputStream("d:\\abc.txt"));
+//        System.out.println(dis.read());
+//        dis.close();
+//
+//
+//        Map<String, String> map = new HashMap<String, String>();
 
+        Integer integer1 =100;
+        Integer integer2 = Integer.valueOf(100);
+        System.out.println(integer1 == integer2);
 
-        Map<String, String> map = new HashMap<String, String>();
+        String s1 = "Hello";
+        String s2 = "Hello";
+        System.out.println(s1 == s2);
+
     }
 
 

@@ -6,7 +6,7 @@ public class main {
         HomeTheaterFacade homeTheaterFacade = new HomeTheaterFacade();
         homeTheaterFacade.ready();
         homeTheaterFacade.play();
-
+        
         homeTheaterFacade.end();
 
 

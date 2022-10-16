@@ -69,7 +69,7 @@ class Singleton_Type4 {
 class Singleton_Type5 {
     //创建一个成员变量
     //volatile 作用是在多线程操作下，第一，修改后，直接将线程的操作内存，放在所有线程的主操作内存上，会同步到所有线程内存——可见性。第二，禁止指令重排优化的规则，避免系统优化机制的干扰
-    //详细的volatile作用：https://blog.csdn.net/qiushisoftware/article/details/102912395
+    // 这里volatile的作用是避免 instance = new Singleton_Type5(); 的重排序，避免即使跳出同步代码块后，instance的值使用方法为null，这样就不能保证在多线程下只创建一次Singleton_Type5对象了
     private static volatile Singleton_Type5 instance;
     //使构造方法私有，对外不可见
     private Singleton_Type5(){}
